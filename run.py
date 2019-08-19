@@ -1,6 +1,5 @@
 import sys
 import socket
-import errno
 from config import config as conf
 from config import messages as msg
 
@@ -22,4 +21,4 @@ def bind_server(host, port):
 
 
 server = None
-bind_server(conf.host, conf.port)
+bind_server(conf.HOST, conf.PORT)

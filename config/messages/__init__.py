@@ -1,9 +1,12 @@
+# This messages just shown as log, not messages to clients
+
 triple_dots = "..."
 successful_binding = "Server was launched successfully."
 problem_in_binding = "A problem in binding server..."
 exiting = "Exiting"
 port = "port:"
 host = "hostname:"
+address = "address:"
 waiting = "Waiting"
 max_client = "Max clients"
 new_connection = "A new connection :"

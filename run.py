@@ -1,7 +1,7 @@
 import com
 from config import messages as msg
 from config.config import *
-from models import Client
+from models.Client import Client
 from services.PPNServer import PPNServer
 
 server = PPNServer(HOST, PORT).run()  # Run PPN Server

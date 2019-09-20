@@ -21,8 +21,6 @@ class Client:
 
     def run(self):
         while True:
-            clients1 = com.clients
-            com.cl = clients1
             try:
                 data = self.client.recv(1024)  # This message is sent from client
                 if not data:
@@ -34,10 +32,10 @@ class Client:
             except socket.error as error_msg:
                 self.client.close()
                 for index, x in enumerate(com.clients):
-                    if x.session_id == self.session_id:
+                    if x.address == self.address:
                         com.clients.pop(index)
                 print(msg.close_connection + str(self.address))
                 break
 
     def send(self, data):
-        self.client.send(data)  # this syntax sends msg to client
+        self.client.send(data)  # This syntax sends msg to client

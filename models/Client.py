@@ -3,7 +3,7 @@ import socket
 import threading
 
 import com
-from config import messages as msg
+from config import logs as msg
 
 
 class Client:

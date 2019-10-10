@@ -1,7 +1,7 @@
 import socket
 import sys
 
-from config import messages as msg
+from config import logs as logs
 
 
 class PPNServer:
@@ -17,13 +17,13 @@ class PPNServer:
         try:
             self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             self.server.bind((self.host, self.port))
-            print(msg.successful_binding)
-            print(msg.address + self.host + ":" + str(self.port))
+            print(logs.successful_binding)
+            print(logs.address + self.host + ":" + str(self.port))
             self.server.listen()
-            print(msg.waiting + msg.triple_dots)
+            print(logs.waiting + logs.triple_dots)
 
         except socket.error as error_msg:
-            print(msg.problem_in_binding + msg.triple_dots + msg.exiting)
+            print(logs.problem_in_binding + logs.triple_dots + logs.exiting)
             print(error_msg)
             self.server = None
             sys.exit(0)

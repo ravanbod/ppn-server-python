@@ -1,5 +1,5 @@
 import com
-from config import messages as msg
+from config import logs
 from config.config import *
 from models.Client import Client
 from services.PPNServer import PPNServer
@@ -13,4 +13,4 @@ if __name__ == "__main__" and server is not None:
             c, a = server.accept()  # A new client connected.
             com.clients.append(Client(c, a))  # Add new client to clients list.
         else:  # Max clients reached
-            print(msg.max_client + msg.triple_dots)
+            print(logs.max_client + logs.triple_dots)

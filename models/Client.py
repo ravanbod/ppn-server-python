@@ -3,7 +3,8 @@ import socket
 import threading
 
 import com
-from config import logs as msg
+from config import logs as log
+from config import config
 
 
 class Client:
@@ -16,7 +17,7 @@ class Client:
     def __init__(self, c, addr):
         self.client = c
         self.address = addr
-        print(msg.new_connection + str(addr))
+        print(log.new_connection + str(addr) + "." + config.get_time())
         threading.Thread(target=self.run, args=[]).start()
 
     def run(self):
@@ -34,7 +35,7 @@ class Client:
                 for index, x in enumerate(com.clients):
                     if x.address == self.address:
                         com.clients.pop(index)
-                print(msg.close_connection + str(self.address))
+                print(log.close_connection + str(self.address) + "." + config.get_time())
                 break
 
     def send(self, data):

@@ -1,9 +1,9 @@
-import json
 import threading
 
 import com_vars
 from config import logs as log
 from config.config import *
+from models.Message import *
 
 
 class Client:
@@ -13,10 +13,11 @@ class Client:
 
     # You can add any variable which you want here
 
-    def __init__(self, c, addr):
+    def __init__(self, c, addr, session_id):
         self.client = c
         self.address = addr
-        print(log.new_connection + str(addr) + "." + get_time())
+        self.session_id = session_id
+        print(log.new_connection + str(addr) + "-session_id:" + session_id + " ." + get_time())
         threading.Thread(target=self.run, args=[]).start()
 
     def run(self):
@@ -26,9 +27,9 @@ class Client:
                 if not data:
                     self.client.close()
                 else:
-                    print(json.loads(data.decode()))  # Convert Json data to an array
-                    for x in com_vars.clients:
-                        x.send(data)
+                    print(log.new_message + str(
+                        self.address) + "-session_id:" + self.session_id + " -message:" + data.decode())
+                    com_vars.send_to_all(Message("title", "con", "url"))
             except socket.error as error_msg:
                 self.client.close()
                 for index, x in enumerate(com_vars.clients):

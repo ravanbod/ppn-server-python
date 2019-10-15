@@ -21,6 +21,7 @@ if __name__ == "__main__" and server is not None:
     while True:
         if MAX_CLIENT == -1 or len(com_vars.clients) <= MAX_CLIENT:
             c, a = server.accept()  # A new client connected.
-            com_vars.clients.append(Client(c, a))  # Add new client to clients list.
+            session_id = c.recv(1024).decode()  # First sent message from client is session_id
+            com_vars.clients.append(Client(c, a, session_id))  # Add new client to clients list.
         else:  # Max clients reached
             print(logs.max_client + logs.triple_dots + "." + get_time())

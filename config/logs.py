@@ -2,7 +2,7 @@
 
 triple_dots = "..."
 successful_binding = "Server was launched successfully."
-problem_in_binding = "A problem in binding server..."
+problem_in_binding = "A problem in binding server"
 server_closed = "Server was closed."
 exiting = "Exiting"
 port = "port:"
@@ -12,3 +12,4 @@ waiting = "Waiting"
 max_client = "Max clients"
 new_connection = "A new connection :"
 close_connection = "A connection was closed :"
+new_message = "A new message from:"

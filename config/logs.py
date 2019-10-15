@@ -3,6 +3,7 @@
 triple_dots = "..."
 successful_binding = "Server was launched successfully."
 problem_in_binding = "A problem in binding server..."
+server_closed = "Server was closed."
 exiting = "Exiting"
 port = "port:"
 host = "hostname:"

@@ -23,7 +23,7 @@ class PPNServer:
             print(logs.waiting + logs.triple_dots)
 
         except socket.error as error_msg:
-            print(logs.problem_in_binding + logs.triple_dots + logs.exiting + get_time())
+            print(logs.problem_in_binding + logs.triple_dots + logs.exiting + "." + get_time())
             print(error_msg)
             self.server = None
             sys.exit(0)

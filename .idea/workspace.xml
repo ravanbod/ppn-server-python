@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a163c268-a717-4037-9221-df48443f0e50" name="Default Changelist" comment="Fix some codes...">
+    <list default="true" id="a163c268-a717-4037-9221-df48443f0e50" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.py" beforeDir="false" afterPath="$PROJECT_DIR$/com_vars.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Client.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/Client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/PPNServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/PPNServer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/appdirs.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/appdirs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pkg_resources/_vendor/appdirs.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pkg_resources/_vendor/appdirs.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -180,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566655758510</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="time was added to some log messages.">
+      <created>1571119897848</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1571119897849</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -228,6 +238,7 @@
     <MESSAGE value="Multi clients feature was added." />
     <MESSAGE value="Better dir names and paths" />
     <MESSAGE value="Better dir names and paths v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Better dir names and paths v2" />
+    <MESSAGE value="time was added to some log messages." />
+    <option name="LAST_COMMIT_MESSAGE" value="time was added to some log messages." />
   </component>
 </project>

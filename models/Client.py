@@ -1,10 +1,9 @@
 import json
-import socket
 import threading
 
-import com
+import com_vars
 from config import logs as log
-from config import config
+from config.config import *
 
 
 class Client:
@@ -17,7 +16,7 @@ class Client:
     def __init__(self, c, addr):
         self.client = c
         self.address = addr
-        print(log.new_connection + str(addr) + "." + config.get_time())
+        print(log.new_connection + str(addr) + "." + get_time())
         threading.Thread(target=self.run, args=[]).start()
 
     def run(self):
@@ -28,14 +27,14 @@ class Client:
                     self.client.close()
                 else:
                     print(json.loads(data.decode()))  # Convert Json data to an array
-                    for x in com.clients:
+                    for x in com_vars.clients:
                         x.send(data)
             except socket.error as error_msg:
                 self.client.close()
-                for index, x in enumerate(com.clients):
+                for index, x in enumerate(com_vars.clients):
                     if x.address == self.address:
-                        com.clients.pop(index)
-                print(log.close_connection + str(self.address) + "." + config.get_time())
+                        com_vars.clients.pop(index)
+                print(log.close_connection + str(self.address) + "." + get_time())
                 break
 
     def send(self, data):

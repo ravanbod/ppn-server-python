@@ -38,7 +38,7 @@ address:192.168.1.103:21000
 Waiting...`
 
 if you see that address is 127.0.0.1 instead of 192.168.x.x or your server ip, it has problem in running socket. connect your pc to a router and run project again..
-##S end push notification to clients.
+## Send push notification to clients.
 Any clients have to send `session_id` after connecting to server app. in Android Library you send this when you are initializing connection (Read more in client project page).
 ### Send push notification with an API
 Not ready yet...

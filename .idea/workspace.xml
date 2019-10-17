@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a163c268-a717-4037-9221-df48443f0e50" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com_vars.py" beforeDir="false" afterPath="$PROJECT_DIR$/common.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/logs.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/logs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Client.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/Client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Message.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/Message.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/appdirs.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/appdirs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pkg_resources/_vendor/appdirs.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pkg_resources/_vendor/appdirs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/PPNServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/PPNServer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -213,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571129445421</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="venv was removed.">
+      <created>1571302013359</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1571302013359</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -265,7 +267,8 @@
     <MESSAGE value="&quot;imports&quot; statements are fixed and unused of them removed. but i don't know that really good or no!" />
     <MESSAGE value="get_input thread was built." />
     <MESSAGE value="session_id was added." />
-    <option name="LAST_COMMIT_MESSAGE" value="session_id was added." />
+    <MESSAGE value="venv was removed." />
+    <option name="LAST_COMMIT_MESSAGE" value="venv was removed." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

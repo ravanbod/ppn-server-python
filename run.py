@@ -6,7 +6,7 @@ import config.logs as log
 from config.config import *
 from models.Client import Client
 from models.Message import Message
-from services.PPNServer import PPNServer
+from services.PPNServer import PPNServer, send_to
 
 
 def get_input():
@@ -27,7 +27,7 @@ def get_input():
             content = input()
             print("img_url?")
             img_url = input()
-            common.send_to(sid, Message(title, content, img_url))
+            send_to(sid, Message(title, content, img_url))
 
 
 server = PPNServer(HOST, PORT).run()  # Run PPN Server

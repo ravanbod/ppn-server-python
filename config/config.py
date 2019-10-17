@@ -3,7 +3,7 @@ import time
 
 # --- Server Variables START ---
 HOST = socket.gethostbyname(socket.gethostname())
-PORT = 25087
+PORT = 21000
 MAX_CLIENT = 1000  # Set this -1 if you want unlimited clients.
 
 

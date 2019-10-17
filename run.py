@@ -6,7 +6,7 @@ import config.logs as log
 from config.config import *
 from models.Client import Client
 from models.Message import Message
-from services.PPNServer import PPNServer, send_to
+from services.PPNServer import PPNServer, send_to, send_to_all
 
 
 def get_input():
@@ -18,7 +18,7 @@ def get_input():
             server.close()
             os._exit(1)
             break
-        if s == "send":  # This cmd is just for test
+        elif s == "send":  # This cmd is just for test
             print("session_id?")
             sid = input()
             print("title?")
@@ -28,7 +28,14 @@ def get_input():
             print("img_url?")
             img_url = input()
             send_to(sid, Message(title, content, img_url))
-
+        elif s == "send2all":
+            print("title?")
+            title = input()
+            print("content?")
+            content = input()
+            print("img_url?")
+            img_url = input()
+            send_to_all(Message(title, content, img_url))
 
 server = PPNServer(HOST, PORT).run()  # Run PPN Server
 if __name__ == "__main__" and server is not None:

@@ -1,6 +1,6 @@
 import threading
 
-import com_vars
+import common
 from config import logs as log
 from config.config import *
 from models.Message import *
@@ -29,12 +29,12 @@ class Client:
                 else:
                     print(log.new_message + str(
                         self.address) + "-session_id:" + self.session_id + " -message:" + data.decode())
-                    com_vars.send_to_all(Message("title", "con", "url"))
+                    common.send_to_all(Message("title", "con", "url"))
             except socket.error as error_msg:
                 self.client.close()
-                for index, x in enumerate(com_vars.clients):
+                for index, x in enumerate(common.clients):
                     if x.address == self.address:
-                        com_vars.clients.pop(index)
+                        common.clients.pop(index)
                 print(log.close_connection + str(self.address) + "." + get_time())
                 break
 

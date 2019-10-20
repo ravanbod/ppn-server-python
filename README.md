@@ -7,7 +7,7 @@ For using of this project you have to run Server App on your server and import C
 **At this moment just Android Library (Java) is now written for the client section**.
  you can start server app on any OS which has python3.
 ## Why i started this project?
-This is a fun project for me, i started this project to learning socket programming in java and python and now i want to share it with you.
+This is a fun project for me, i started this project for learning socket programming in java and python and now i want to share it with you.
 ## Installing the server app
 ### Installing on Linux & MacOS
 #### Cloning files 

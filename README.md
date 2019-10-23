@@ -1,11 +1,13 @@
 # Private Push Notification (Server side)
+ ![alt text](https://user-images.githubusercontent.com/36668681/67162771-5c314700-f374-11e9-9f15-dcf200ba69bc.gif)
+
 ## What is PPN?
 Private Push Notification (PPN) is a project that you can connect your client app to your server app and send messages as push notification to your client app from server app.
 For using of this project you have to run Server App on your server and import Client Library in your client app.
 **At this moment just Android Library (Java) is now written for the client section**.
  you can start server app on any OS which has python3.
 ## Why i started this project?
-This is a fun project for me, i started this project to learning socket programming in java and python and now i want to share it with you.
+This is a fun project for me, i started this project for learning socket programming in java and python and now i want to share it with you.
 ## Installing the server app
 ### Installing on Linux & MacOS
 #### Cloning files 

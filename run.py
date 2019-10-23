@@ -19,22 +19,15 @@ def get_input():
             os._exit(1)
             break
         elif s == "send":  # This cmd is just for test
-            print("session_id?")
-            sid = input()
-            print("title?")
-            title = input()
-            print("content?")
-            content = input()
-            print("img_url?")
-            img_url = input()
+            sid = input("session_id?")
+            title = input("title?")
+            content = input("content?")
+            img_url = input("img_url?")
             send_to(sid, Message(title, content, img_url))
         elif s == "send2all":
-            print("title?")
-            title = input()
-            print("content?")
-            content = input()
-            print("img_url?")
-            img_url = input()
+            title = input("title?")
+            content = input("content?")
+            img_url = input("img_url?")
             send_to_all(Message(title, content, img_url))
 
 server = PPNServer(HOST, PORT).run()  # Run PPN Server
